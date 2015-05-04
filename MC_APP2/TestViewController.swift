@@ -26,6 +26,14 @@ class TestViewController: UIViewController {
            setupZoneTwo()
         }
         
+        if zonePicked == "zoneThree"{
+            setupZoneThree()
+        }
+        
+        if zonePicked == "zoneFour"{
+            setupZoneFour()
+        }
+        
     }
     
     
@@ -37,9 +45,20 @@ class TestViewController: UIViewController {
     }
     
     
-    
     func setupZoneTwo() {
-        something.text = "the user picked zone Two"
+        something.text = "the user picked zone TWO"
+    }
+    
+    
+    
+    func setupZoneThree() {
+        something.text = "the user picked zone THREE"
+    }
+    
+    
+    
+    func setupZoneFour() {
+        something.text = "the user picked zone FOUR"
     }
     
     

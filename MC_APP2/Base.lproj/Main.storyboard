@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6750" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Dal-5R-3Oz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Dal-5R-3Oz">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--Splash View Controller-->
@@ -98,16 +98,7 @@
                                 </state>
                                 <connections>
                                     <action selector="zoneTwo:" destination="vjD-Wi-wq8" eventType="touchDown" id="kXV-Ou-46b"/>
-                                    <segue destination="x5K-gT-aUt" kind="show" identifier="zoneThree" id="e4A-FZ-xxf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3c6-Sk-Tc6">
-                                <rect key="frame" x="277" y="198" width="48" height="30"/>
-                                <state key="normal" title="Zone 3">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="x5K-gT-aUt" kind="show" identifier="zoneFour" id="v7N-sW-Dfe"/>
+                                    <segue destination="x5K-gT-aUt" kind="show" identifier="zoneTwo" id="e4A-FZ-xxf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYT-p1-Wuw">
@@ -116,7 +107,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="x5K-gT-aUt" kind="show" identifier="zoneOne" id="esf-zB-u8Q"/>
+                                    <segue destination="x5K-gT-aUt" kind="show" identifier="zoneFour" id="esf-zB-u8Q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSg-TD-61o">
@@ -126,7 +117,16 @@
                                 </state>
                                 <connections>
                                     <action selector="zoneOne:" destination="vjD-Wi-wq8" eventType="touchDown" id="OOe-sK-rFU"/>
-                                    <segue destination="x5K-gT-aUt" kind="show" identifier="zoneTwo" id="aeP-ce-ArW"/>
+                                    <segue destination="x5K-gT-aUt" kind="show" identifier="zoneOne" id="aeP-ce-ArW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3c6-Sk-Tc6">
+                                <rect key="frame" x="277" y="198" width="48" height="30"/>
+                                <state key="normal" title="Zone 3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="x5K-gT-aUt" kind="show" identifier="zoneThree" id="tGg-id-aJp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -152,12 +152,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pl-K3-EtM">
                                 <rect key="frame" x="16" y="143" width="319" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="uet-xN-JbX"/>
                     <connections>
                         <outlet property="something" destination="9Pl-K3-EtM" id="z4c-9W-GJY"/>
                     </connections>
@@ -333,6 +334,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="esf-zB-u8Q"/>
+        <segue reference="tGg-id-aJp"/>
     </inferredMetricsTieBreakers>
 </document>

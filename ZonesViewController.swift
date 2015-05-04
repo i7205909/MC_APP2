@@ -32,6 +32,14 @@ class ZonesViewController: UIViewController {
         zonePicked = "zoneTwo"
     }
     
+    @IBAction func zoneThree(sender: AnyObject) {
+        zonePicked = "zoneThree"
+    }
+    
+    @IBAction func zoneFour(sender: AnyObject) {
+        zonePicked = "zoneFour"
+    }
+    
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
