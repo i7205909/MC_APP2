@@ -12,7 +12,11 @@ class TestViewController: UIViewController {
     
     var zonePicked : String?
 
-    @IBOutlet var something: UILabel!
+    @IBOutlet var Question1: UILabel!
+    @IBOutlet var Question2: UILabel!
+    @IBOutlet var Question3: UILabel!
+    
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -39,26 +43,31 @@ class TestViewController: UIViewController {
     
     
     func setupZoneOne() {
-        something.text = "the user picked zone ONE"
-        
-        
+        Question1.text = "What shape is the entrance to the cloisters?"
+        Question2.text = "What is the arrangement of shapes in the arch of the cloisters?"
+        Question3.text = "What are shapes cut out in the armoured glove?"
     }
     
     
     func setupZoneTwo() {
-        something.text = "the user picked zone TWO"
+        Question1.text = "What is the shape on the points of the Cathedral roof during construction?"
+        Question2.text = "What is the shape of the font?"
+        Question3.text = "What is the shape of the freemason symbol given to Elias De Derham?"
     }
     
     
     
     func setupZoneThree() {
-        something.text = "the user picked zone THREE"
+        Question1.text = "What is the shape of the shield painted on the ceiling?"
+        Question2.text = "What shape is the arrangement of the Prisoners of Conscience Window?"
+        Question3.text = "What shape is the Shrine Tomb of St Osmund?"
     }
     
     
-    
     func setupZoneFour() {
-        something.text = "the user picked zone FOUR"
+        Question1.text = "What is the shape of the Chapter House?"
+        Question2.text = "What is the shape of the fleur-de-lis found on all the cushions?"
+        Question3.text = "What is the shape found on the pillow for Nicholas"
     }
     
     

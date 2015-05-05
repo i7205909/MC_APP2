@@ -18,7 +18,6 @@
 		49C4CD061AF23C4100DF82BE /* Zone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C4CD051AF23C4100DF82BE /* Zone.swift */; };
 		49C4CD081AF23C6F00DF82BE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C4CD071AF23C6F00DF82BE /* Question.swift */; };
 		49C4CD0C1AF23CD100DF82BE /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C4CD0B1AF23CD100DF82BE /* WelcomeViewController.swift */; };
-		49C4CD0E1AF23CE500DF82BE /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C4CD0D1AF23CE500DF82BE /* QuestionsViewController.swift */; };
 		49C4CD101AF23D2200DF82BE /* MultichoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C4CD0F1AF23D2200DF82BE /* MultichoiceViewController.swift */; };
 		49C4CD121AF24AFB00DF82BE /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C4CD111AF24AFB00DF82BE /* GroupsViewController.swift */; };
 		49C4CD161AF24B9000DF82BE /* BackForwardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C4CD151AF24B9000DF82BE /* BackForwardViewController.swift */; };
@@ -51,7 +50,6 @@
 		49C4CD051AF23C4100DF82BE /* Zone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Zone.swift; path = ../Zone.swift; sourceTree = "<group>"; };
 		49C4CD071AF23C6F00DF82BE /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Question.swift; path = ../Question.swift; sourceTree = "<group>"; };
 		49C4CD0B1AF23CD100DF82BE /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = ../WelcomeViewController.swift; sourceTree = "<group>"; };
-		49C4CD0D1AF23CE500DF82BE /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionsViewController.swift; path = ../QuestionsViewController.swift; sourceTree = "<group>"; };
 		49C4CD0F1AF23D2200DF82BE /* MultichoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MultichoiceViewController.swift; path = ../MultichoiceViewController.swift; sourceTree = "<group>"; };
 		49C4CD111AF24AFB00DF82BE /* GroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		49C4CD151AF24B9000DF82BE /* BackForwardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackForwardViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 				49306D821AF3811200941171 /* SplashViewController.swift */,
 				49C4CD0B1AF23CD100DF82BE /* WelcomeViewController.swift */,
 				49C4CD111AF24AFB00DF82BE /* GroupsViewController.swift */,
-				49C4CD0D1AF23CE500DF82BE /* QuestionsViewController.swift */,
 				49C4CD0F1AF23D2200DF82BE /* MultichoiceViewController.swift */,
 				49C4CD151AF24B9000DF82BE /* BackForwardViewController.swift */,
 				49306D841AF390B400941171 /* ZonesViewController.swift */,
@@ -242,7 +239,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49C4CD0E1AF23CE500DF82BE /* QuestionsViewController.swift in Sources */,
 				49C4CD081AF23C6F00DF82BE /* Question.swift in Sources */,
 				49C4CD0C1AF23CD100DF82BE /* WelcomeViewController.swift in Sources */,
 				49C4CD121AF24AFB00DF82BE /* GroupsViewController.swift in Sources */,
