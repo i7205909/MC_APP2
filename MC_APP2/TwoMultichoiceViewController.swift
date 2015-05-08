@@ -26,8 +26,22 @@ class TwoMultichoiceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        println(group1)
-        println(zonePicked!)
+        nextButton.hidden = true
+        
+        
+        if zonePicked == "zoneOne"{
+            self.chooseQuestion1()
+        }
+        else if zonePicked == "zoneTwo"{
+            self.chooseQuestion2()
+        }
+        else if zonePicked == "zoneThree"{
+            self.chooseQuestion3()
+        }
+        else {
+            self.chooseQuestion4()
+        }
+        
         // Do any additional setup after loading the view.
     }
     
@@ -163,7 +177,7 @@ class TwoMultichoiceViewController: UIViewController {
         questionNumber++
         
         
-        if questionNumber == 3 {
+        if questionNumber == 4 {
             
             println("go to the next screen")
             performSegueWithIdentifier("FinishMultiChoice", sender: self)
@@ -209,7 +223,7 @@ class TwoMultichoiceViewController: UIViewController {
         questionNumber++
         
         
-        if questionNumber == 3 {
+        if questionNumber == 4 {
             
             println("go to the next screen")
             performSegueWithIdentifier("FinishMultiChoice", sender: self)
@@ -255,7 +269,7 @@ class TwoMultichoiceViewController: UIViewController {
         questionNumber++
         
         
-        if questionNumber == 3 {
+        if questionNumber == 4 {
             
             println("go to the next screen")
             performSegueWithIdentifier("FinishMultiChoice", sender: self)
@@ -301,7 +315,7 @@ class TwoMultichoiceViewController: UIViewController {
         questionNumber++
         
         
-        if questionNumber == 3 {
+        if questionNumber == 4 {
             
             println("go to the next screen")
             performSegueWithIdentifier("FinishMultiChoice", sender: self)
