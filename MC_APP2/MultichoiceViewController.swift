@@ -9,6 +9,10 @@
 import UIKit
 
 class MultichoiceViewController: UIViewController {
+    
+    
+    var zonePicked : String?
+
 
     @IBOutlet var QuestionText: UILabel!
     @IBOutlet var answer1: UIButton!
@@ -106,13 +110,26 @@ class MultichoiceViewController: UIViewController {
     }
     
     @IBAction func nextquestion(sender: AnyObject) {
-        self.chooseQuestion()
+        if zonePicked == "zoneOne"{
+            self.chooseQuestion1()
+        }
+        else if zonePicked == "zoneTwo"{
+            self.chooseQuestion2()
+        }
+        else if zonePicked == "zoneThree"{
+            self.chooseQuestion3()
+        }
+        else {
+            self.chooseQuestion4()
+        }
+        
         nextButton.hidden = true
     }
     
     
-    
-    func chooseQuestion (){
+ 
+    func chooseQuestion1 (){
+        
         
         switch questionNumber{
         case 0:
@@ -150,6 +167,138 @@ class MultichoiceViewController: UIViewController {
         if questionNumber == 3 {
             
           println("go to the next screen")
+            
+            
+        }
+    }
+    
+    func chooseQuestion2 (){
+        
+        
+        switch questionNumber{
+        case 0:
+            QuestionText.text = "forth question"
+            answer1.setTitle("4first answer", forState: UIControlState.Normal)
+            answer2.setTitle("4first answer", forState: UIControlState.Normal)
+            answer3.setTitle("4first answer", forState: UIControlState.Normal)
+            answer4.setTitle("4first answer", forState: UIControlState.Normal)
+            
+        case 1:
+            QuestionText.text = "5-second question"
+            answer1.setTitle("5-second answer", forState: UIControlState.Normal)
+            answer2.setTitle("5-second answer", forState: UIControlState.Normal)
+            answer3.setTitle("5-second answer", forState: UIControlState.Normal)
+            answer4.setTitle("5-second answer", forState: UIControlState.Normal)
+            
+        case 2:
+            QuestionText.text = "6-third question"
+            answer1.setTitle("6-third answer", forState: UIControlState.Normal)
+            answer2.setTitle("6-third answer", forState: UIControlState.Normal)
+            answer3.setTitle("6-third answer", forState: UIControlState.Normal)
+            answer4.setTitle("6-third answer", forState: UIControlState.Normal)
+            
+            
+            
+        default:
+            break
+            
+        }
+        
+        println("youre on question \(questionNumber)")
+        questionNumber++
+        
+        
+        if questionNumber == 3 {
+            
+            println("go to the next screen")
+            
+            
+        }
+    }
+    
+    func chooseQuestion3 (){
+        
+        
+        switch questionNumber{
+        case 0:
+            QuestionText.text = "7-first question"
+            answer1.setTitle("7-first answer", forState: UIControlState.Normal)
+            answer2.setTitle("7-first answer", forState: UIControlState.Normal)
+            answer3.setTitle("7-first answer", forState: UIControlState.Normal)
+            answer4.setTitle("7-first answer", forState: UIControlState.Normal)
+            
+        case 1:
+            QuestionText.text = "8-second question"
+            answer1.setTitle("8-second answer", forState: UIControlState.Normal)
+            answer2.setTitle("8-second answer", forState: UIControlState.Normal)
+            answer3.setTitle("8-second answer", forState: UIControlState.Normal)
+            answer4.setTitle("8-second answer", forState: UIControlState.Normal)
+            
+        case 2:
+            QuestionText.text = "9-third question"
+            answer1.setTitle("9-third answer", forState: UIControlState.Normal)
+            answer2.setTitle("9-third answer", forState: UIControlState.Normal)
+            answer3.setTitle("9-third answer", forState: UIControlState.Normal)
+            answer4.setTitle("9-third answer", forState: UIControlState.Normal)
+            
+            
+            
+        default:
+            break
+            
+        }
+        
+        println("youre on question \(questionNumber)")
+        questionNumber++
+        
+        
+        if questionNumber == 3 {
+            
+            println("go to the next screen")
+            
+            
+        }
+    }
+    
+    func chooseQuestion4 (){
+        
+        
+        switch questionNumber{
+        case 0:
+            QuestionText.text = "10-first question"
+            answer1.setTitle("10-first answer", forState: UIControlState.Normal)
+            answer2.setTitle("10-first answer", forState: UIControlState.Normal)
+            answer3.setTitle("10-first answer", forState: UIControlState.Normal)
+            answer4.setTitle("10-first answer", forState: UIControlState.Normal)
+            
+        case 1:
+            QuestionText.text = "11-second question"
+            answer1.setTitle("11-second answer", forState: UIControlState.Normal)
+            answer2.setTitle("11-second answer", forState: UIControlState.Normal)
+            answer3.setTitle("11-second answer", forState: UIControlState.Normal)
+            answer4.setTitle("11-second answer", forState: UIControlState.Normal)
+            
+        case 2:
+            QuestionText.text = "12-third question"
+            answer1.setTitle("12-third answer", forState: UIControlState.Normal)
+            answer2.setTitle("12-third answer", forState: UIControlState.Normal)
+            answer3.setTitle("12-third answer", forState: UIControlState.Normal)
+            answer4.setTitle("12-third answer", forState: UIControlState.Normal)
+            
+            
+            
+        default:
+            break
+            
+        }
+        
+        println("youre on question \(questionNumber)")
+        questionNumber++
+        
+        
+        if questionNumber == 3 {
+            
+            println("go to the next screen")
             
             
         }

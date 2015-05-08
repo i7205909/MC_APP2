@@ -76,14 +76,20 @@ class TestViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+  
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.destinationViewController .isKindOfClass(MultichoiceViewController) {
-            var VC = segue.destinationViewController as MultichoiceViewController
-            
-            
+        
+        if let destinationVC = segue.destinationViewController as? MultichoiceViewController {
+            destinationVC.zonePicked = zonePicked
         }
+        
+        performSegueWithIdentifier(zonePicked, sender: self)
     }
+    
+    override func performSegueWithIdentifier(identifier: String?, sender: AnyObject?) {
+        
+    }
+
     
     
     
