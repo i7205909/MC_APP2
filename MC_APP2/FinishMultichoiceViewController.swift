@@ -11,7 +11,8 @@ import UIKit
 class FinishMultichoiceViewController: UIViewController {
     
     var zonePicked : String?
-
+    var group1 = [Int]()
+    var group2 = [Int]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,5 +35,24 @@ class FinishMultichoiceViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if let destinationVC = segue.destinationViewController as? ZonesViewController {
+            destinationVC.group1 = group1
+            destinationVC.group2 = group2
+        }
+        
+        if let destinationVC = segue.destinationViewController as? ResultViewController {
+            destinationVC.group1 = group1
+            destinationVC.group2 = group2
+        }
+        
+        performSegueWithIdentifier(zonePicked, sender: self)
+    }
+    
+    override func performSegueWithIdentifier(identifier: String?, sender: AnyObject?) {
+        
+    }
 
 }

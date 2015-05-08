@@ -13,6 +13,9 @@ class ZonesViewController: UIViewController {
     
     var zonePicked : String = ""
     
+    var group1 = [Int]()
+    var group2 = [Int]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -46,6 +49,8 @@ class ZonesViewController: UIViewController {
         
         if let destinationVC = segue.destinationViewController as? TestViewController {
             destinationVC.zonePicked = zonePicked
+            destinationVC.group1 = group1
+            destinationVC.group2 = group2
         }
         
         performSegueWithIdentifier(zonePicked, sender: self)

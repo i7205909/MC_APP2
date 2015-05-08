@@ -16,6 +16,7 @@
 		490AA4901AF235CF00525254 /* MC_APP2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490AA48F1AF235CF00525254 /* MC_APP2Tests.swift */; };
 		4927B16B1AFCCA1A009F08C3 /* TwoMultichoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927B16A1AFCCA1A009F08C3 /* TwoMultichoiceViewController.swift */; };
 		4927B16D1AFCD731009F08C3 /* FinishMultichoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927B16C1AFCD731009F08C3 /* FinishMultichoiceViewController.swift */; };
+		4927B16F1AFCE91B009F08C3 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927B16E1AFCE91B009F08C3 /* ResultViewController.swift */; };
 		49306D831AF3811200941171 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49306D821AF3811200941171 /* SplashViewController.swift */; };
 		49306D851AF390B400941171 /* ZonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49306D841AF390B400941171 /* ZonesViewController.swift */; };
 		49C4CD061AF23C4100DF82BE /* Zone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C4CD051AF23C4100DF82BE /* Zone.swift */; };
@@ -50,6 +51,7 @@
 		490AA48F1AF235CF00525254 /* MC_APP2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC_APP2Tests.swift; sourceTree = "<group>"; };
 		4927B16A1AFCCA1A009F08C3 /* TwoMultichoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoMultichoiceViewController.swift; sourceTree = "<group>"; };
 		4927B16C1AFCD731009F08C3 /* FinishMultichoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishMultichoiceViewController.swift; sourceTree = "<group>"; };
+		4927B16E1AFCE91B009F08C3 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		49306D821AF3811200941171 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		49306D841AF390B400941171 /* ZonesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZonesViewController.swift; path = ../ZonesViewController.swift; sourceTree = "<group>"; };
 		49C4CD051AF23C4100DF82BE /* Zone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Zone.swift; path = ../Zone.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				49306D841AF390B400941171 /* ZonesViewController.swift */,
 				49C4CD171AF24BA300DF82BE /* DoneViewController.swift */,
 				490AA47D1AF235CE00525254 /* Main.storyboard */,
+				4927B16E1AFCE91B009F08C3 /* ResultViewController.swift */,
 				4927B16C1AFCD731009F08C3 /* FinishMultichoiceViewController.swift */,
 				490842CD1AFB72BF00368210 /* TestViewController.swift */,
 				490842CB1AFB664600368210 /* MultichoiceViewController.swift */,
@@ -254,6 +257,7 @@
 				49C4CD161AF24B9000DF82BE /* BackForwardViewController.swift in Sources */,
 				49306D851AF390B400941171 /* ZonesViewController.swift in Sources */,
 				490AA47A1AF235CE00525254 /* AppDelegate.swift in Sources */,
+				4927B16F1AFCE91B009F08C3 /* ResultViewController.swift in Sources */,
 				49C4CD181AF24BA300DF82BE /* DoneViewController.swift in Sources */,
 				49C4CD061AF23C4100DF82BE /* Zone.swift in Sources */,
 				490842CC1AFB664600368210 /* MultichoiceViewController.swift in Sources */,

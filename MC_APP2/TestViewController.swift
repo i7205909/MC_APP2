@@ -16,6 +16,8 @@ class TestViewController: UIViewController {
     @IBOutlet var Question2: UILabel!
     @IBOutlet var Question3: UILabel!
     
+    var group1 = [Int]()
+    var group2 = [Int]()
     
     override func viewDidLoad() {
         
@@ -81,17 +83,17 @@ class TestViewController: UIViewController {
         
         if let destinationVC = segue.destinationViewController as? MultichoiceViewController {
             destinationVC.zonePicked = zonePicked
+            destinationVC.group1 = group1
+            destinationVC.group2 = group2
         }
         
         performSegueWithIdentifier(zonePicked, sender: self)
     }
     
+    
     override func performSegueWithIdentifier(identifier: String?, sender: AnyObject?) {
         
     }
-    
-    
-
     
     
     

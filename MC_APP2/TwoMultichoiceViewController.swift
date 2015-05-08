@@ -9,8 +9,8 @@
 import UIKit
 
 class TwoMultichoiceViewController: UIViewController {
+
     var zonePicked : String?
-    
     
     @IBOutlet var QuestionText: UILabel!
     @IBOutlet var answer1: UIButton!
@@ -21,11 +21,12 @@ class TwoMultichoiceViewController: UIViewController {
     @IBOutlet var nextButton: UIButton!
     var questionNumber = 0
     
-    
-    var group2 = [Int]()
+    var group1: [Int]!
+    var group2: [Int]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        println(group1)
         println(zonePicked!)
         // Do any additional setup after loading the view.
     }
@@ -325,6 +326,8 @@ class TwoMultichoiceViewController: UIViewController {
             
             if let destinationVC = segue.destinationViewController as? FinishMultichoiceViewController {
                 destinationVC.zonePicked = zonePicked
+                destinationVC.group1 = group1
+                destinationVC.group2 = group2
             }
         }
     }
