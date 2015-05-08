@@ -2,7 +2,7 @@
 //  MultichoiceViewController.swift
 //  MC_APP2
 //
-//  Created by UDI-ME-TA on 30/04/2015.
+//  Created by UDI-ME-TA on 07/05/2015.
 //  Copyright (c) 2015 UDI-ME-TA. All rights reserved.
 //
 
@@ -17,23 +17,17 @@ class MultichoiceViewController: UIViewController {
     @IBOutlet var answer4: UIButton!
     @IBOutlet var result: UILabel!
     @IBOutlet var nextButton: UIButton!
-    
     var questionNumber = 0
     
+    
     var group1 = [Int]()
-    
-    
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.chooseQuestion()
-        result.text = ""
-        nextButton.hidden = true
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -54,12 +48,8 @@ class MultichoiceViewController: UIViewController {
             result.text="the points are \(group1.reduce(0,+))"
             
         }
-        
-        
-        
-        
-        
     }
+    
     @IBAction func answer2pressed(sender: AnyObject) {
         nextButton.hidden = false
         
@@ -77,7 +67,9 @@ class MultichoiceViewController: UIViewController {
         }
     }
     
+  
     @IBAction func answer3pressed(sender: AnyObject) {
+        
         nextButton.hidden = false
         
         if questionNumber == 0 {
@@ -95,6 +87,7 @@ class MultichoiceViewController: UIViewController {
     }
     
     @IBAction func answer4pressed(sender: AnyObject) {
+        
         nextButton.hidden = false
         
         
@@ -116,6 +109,8 @@ class MultichoiceViewController: UIViewController {
         self.chooseQuestion()
         nextButton.hidden = true
     }
+    
+    
     
     func chooseQuestion (){
         
@@ -148,8 +143,16 @@ class MultichoiceViewController: UIViewController {
             
         }
         
+        println("youre on question \(questionNumber)")
         questionNumber++
+       
         
+        if questionNumber == 3 {
+            
+          println("go to the next screen")
+            
+            
+        }
     }
 
     /*
