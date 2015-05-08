@@ -1,19 +1,17 @@
 //
-//  MultichoiceViewController.swift
+//  TwoMultichoiceViewController.swift
 //  MC_APP2
 //
-//  Created by UDI-ME-TA on 07/05/2015.
+//  Created by UDI-ME-TA on 08/05/2015.
 //  Copyright (c) 2015 UDI-ME-TA. All rights reserved.
 //
 
 import UIKit
 
-class MultichoiceViewController: UIViewController {
-    
-    
+class TwoMultichoiceViewController: UIViewController {
     var zonePicked : String?
-
-
+    
+    
     @IBOutlet var QuestionText: UILabel!
     @IBOutlet var answer1: UIButton!
     @IBOutlet var answer2: UIButton!
@@ -24,14 +22,14 @@ class MultichoiceViewController: UIViewController {
     var questionNumber = 0
     
     
-    var group1 = [Int]()
-
+    var group2 = [Int]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        println(zonePicked!)
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -41,15 +39,15 @@ class MultichoiceViewController: UIViewController {
         nextButton.hidden = false
         
         if questionNumber == 0 {
-            group1.append(1)
-            result.text="the points are \(group1.reduce(0,+))"
+            group2.append(1)
+            result.text="the points are \(group2.reduce(0,+))"
         }else if questionNumber == 1{
-            group1.append(1)
-            result.text="the points are \(group1.reduce(0,+))"
+            group2.append(1)
+            result.text="the points are \(group2.reduce(0,+))"
             
         }else if questionNumber == 2 {
-            group1.append(1)
-            result.text="the points are \(group1.reduce(0,+))"
+            group2.append(1)
+            result.text="the points are \(group2.reduce(0,+))"
             
         }
     }
@@ -58,34 +56,34 @@ class MultichoiceViewController: UIViewController {
         nextButton.hidden = false
         
         if questionNumber == 0 {
-            group1.append(1)
-            result.text="the points are \(group1.reduce(0,+))"
+            group2.append(1)
+            result.text="the points are \(group2.reduce(0,+))"
         }else if questionNumber == 1{
-            group1.append(1)
-            result.text="the points are \(group1.reduce(0,+))"
+            group2.append(1)
+            result.text="the points are \(group2.reduce(0,+))"
             
         }else if questionNumber == 2 {
-            group1.append(1)
-            result.text="the points are \(group1.reduce(0,+))"
+            group2.append(1)
+            result.text="the points are \(group2.reduce(0,+))"
             
         }
     }
     
-  
+    
     @IBAction func answer3pressed(sender: AnyObject) {
         
         nextButton.hidden = false
         
         if questionNumber == 0 {
-            group1.append(1)
-            result.text="the points are \(group1.reduce(0,+))"
+            group2.append(1)
+            result.text="the points are \(group2.reduce(0,+))"
         }else if questionNumber == 1{
-            group1.append(1)
-            result.text="the points are \(group1.reduce(0,+))"
+            group2.append(1)
+            result.text="the points are \(group2.reduce(0,+))"
             
         }else if questionNumber == 2 {
-            group1.append(1)
-            result.text="the points are \(group1.reduce(0,+))"
+            group2.append(1)
+            result.text="the points are \(group2.reduce(0,+))"
             
         }
     }
@@ -96,15 +94,15 @@ class MultichoiceViewController: UIViewController {
         
         
         if questionNumber == 0 {
-            group1.append(1)
-            result.text="the points are \(group1.reduce(0,+))"
+            group2.append(1)
+            result.text="the points are \(group2.reduce(0,+))"
         }else if questionNumber == 1{
-            group1.append(1)
-            result.text="the points are \(group1.reduce(0,+))"
+            group2.append(1)
+            result.text="the points are \(group2.reduce(0,+))"
             
         }else if questionNumber == 2 {
-            group1.append(1)
-            result.text="the points are \(group1.reduce(0,+))"
+            group2.append(1)
+            result.text="the points are \(group2.reduce(0,+))"
             
         }
     }
@@ -127,7 +125,7 @@ class MultichoiceViewController: UIViewController {
     }
     
     
- 
+    
     func chooseQuestion1 (){
         
         
@@ -162,13 +160,15 @@ class MultichoiceViewController: UIViewController {
         
         println("youre on question \(questionNumber)")
         questionNumber++
-       
+        
         
         if questionNumber == 3 {
             
-          println("go to the next screen")
+            println("go to the next screen")
+            performSegueWithIdentifier("FinishMultiChoice", sender: self)
+
             
-            performSegueWithIdentifier("group1ToGroup2", sender: self)
+            
         }
     }
     
@@ -211,8 +211,9 @@ class MultichoiceViewController: UIViewController {
         if questionNumber == 3 {
             
             println("go to the next screen")
-            performSegueWithIdentifier("group1ToGroup2", sender: self)
+            performSegueWithIdentifier("FinishMultiChoice", sender: self)
 
+            
             
         }
     }
@@ -256,8 +257,9 @@ class MultichoiceViewController: UIViewController {
         if questionNumber == 3 {
             
             println("go to the next screen")
-            performSegueWithIdentifier("group1ToGroup2", sender: self)
+            performSegueWithIdentifier("FinishMultiChoice", sender: self)
 
+            
             
         }
     }
@@ -301,30 +303,31 @@ class MultichoiceViewController: UIViewController {
         if questionNumber == 3 {
             
             println("go to the next screen")
-            performSegueWithIdentifier("group1ToGroup2", sender: self)
+            performSegueWithIdentifier("FinishMultiChoice", sender: self)
 
             
         }
     }
-
+    
     /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
     }
     */
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if segue.identifier == "group1ToGroup2" {
-
-            if let destinationVC = segue.destinationViewController as? TwoMultichoiceViewController {
+        if segue.identifier == "FinishMultiChoice" {
+            
+            if let destinationVC = segue.destinationViewController as? FinishMultichoiceViewController {
                 destinationVC.zonePicked = zonePicked
             }
         }
     }
 
+    
 }
