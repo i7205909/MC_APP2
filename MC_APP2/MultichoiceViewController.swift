@@ -14,6 +14,7 @@ class MultichoiceViewController: UIViewController {
     var zonePicked : String?
 
 
+  
     @IBOutlet var QuestionText: UILabel!
     @IBOutlet var answer1: UIButton!
     @IBOutlet var answer2: UIButton!

@@ -25,6 +25,7 @@
 		49C4CD121AF24AFB00DF82BE /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C4CD111AF24AFB00DF82BE /* GroupsViewController.swift */; };
 		49C4CD161AF24B9000DF82BE /* BackForwardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C4CD151AF24B9000DF82BE /* BackForwardViewController.swift */; };
 		49C4CD181AF24BA300DF82BE /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C4CD171AF24BA300DF82BE /* DoneViewController.swift */; };
+		9291C8A81AFD006D009CA352 /* Screen-Shot-2015-05-07-at-19.10.23.png in Resources */ = {isa = PBXBuildFile; fileRef = 9291C8A71AFD006D009CA352 /* Screen-Shot-2015-05-07-at-19.10.23.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		49C4CD111AF24AFB00DF82BE /* GroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		49C4CD151AF24B9000DF82BE /* BackForwardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackForwardViewController.swift; sourceTree = "<group>"; };
 		49C4CD171AF24BA300DF82BE /* DoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
+		9291C8A71AFD006D009CA352 /* Screen-Shot-2015-05-07-at-19.10.23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen-Shot-2015-05-07-at-19.10.23.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		490AA4771AF235CE00525254 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9291C8A71AFD006D009CA352 /* Screen-Shot-2015-05-07-at-19.10.23.png */,
 				490AA4781AF235CE00525254 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -230,6 +233,7 @@
 			files = (
 				490AA47F1AF235CE00525254 /* Main.storyboard in Resources */,
 				490AA4841AF235CE00525254 /* LaunchScreen.xib in Resources */,
+				9291C8A81AFD006D009CA352 /* Screen-Shot-2015-05-07-at-19.10.23.png in Resources */,
 				490AA4811AF235CE00525254 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

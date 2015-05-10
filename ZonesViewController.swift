@@ -59,6 +59,5 @@ class ZonesViewController: UIViewController {
     override func performSegueWithIdentifier(identifier: String?, sender: AnyObject?) {
 
     }
-    
 
 }

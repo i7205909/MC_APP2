@@ -12,6 +12,7 @@ class TwoMultichoiceViewController: UIViewController {
 
     var zonePicked : String?
     
+    
     @IBOutlet var QuestionText: UILabel!
     @IBOutlet var answer1: UIButton!
     @IBOutlet var answer2: UIButton!
@@ -19,6 +20,7 @@ class TwoMultichoiceViewController: UIViewController {
     @IBOutlet var answer4: UIButton!
     @IBOutlet var result: UILabel!
     @IBOutlet var nextButton: UIButton!
+    
     var questionNumber = 0
     
     var group1: [Int]!
@@ -173,13 +175,13 @@ class TwoMultichoiceViewController: UIViewController {
             
         }
         
-        println("youre on question \(questionNumber)")
+        println("You're on question \(questionNumber)")
         questionNumber++
         
         
         if questionNumber == 4 {
             
-            println("go to the next screen")
+            println("Go to the next screen")
             performSegueWithIdentifier("FinishMultiChoice", sender: self)
 
             
@@ -219,13 +221,13 @@ class TwoMultichoiceViewController: UIViewController {
             
         }
         
-        println("youre on question \(questionNumber)")
+        println("You're on question \(questionNumber)")
         questionNumber++
         
         
         if questionNumber == 4 {
             
-            println("go to the next screen")
+            println("Go to the next screen")
             performSegueWithIdentifier("FinishMultiChoice", sender: self)
 
             
@@ -265,13 +267,13 @@ class TwoMultichoiceViewController: UIViewController {
             
         }
         
-        println("youre on question \(questionNumber)")
+        println("You're on question \(questionNumber)")
         questionNumber++
         
         
         if questionNumber == 4 {
             
-            println("go to the next screen")
+            println("Go to the next screen")
             performSegueWithIdentifier("FinishMultiChoice", sender: self)
 
             
@@ -311,13 +313,13 @@ class TwoMultichoiceViewController: UIViewController {
             
         }
         
-        println("youre on question \(questionNumber)")
+        println("You're on question \(questionNumber)")
         questionNumber++
         
         
         if questionNumber == 4 {
             
-            println("go to the next screen")
+            println("Go to the next screen")
             performSegueWithIdentifier("FinishMultiChoice", sender: self)
 
             
