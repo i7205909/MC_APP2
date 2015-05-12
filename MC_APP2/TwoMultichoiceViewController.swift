@@ -57,14 +57,14 @@ class TwoMultichoiceViewController: UIViewController {
         
         if questionNumber == 0 {
             group2.append(1)
-            result.text="the points are \(group2.reduce(0,+))"
+            result.text="the points are \(group2.reduce(0,combine: +))"
         }else if questionNumber == 1{
             group2.append(1)
-            result.text="the points are \(group2.reduce(0,+))"
+            result.text="the points are \(group2.reduce(0,combine: +))"
             
         }else if questionNumber == 2 {
             group2.append(1)
-            result.text="the points are \(group2.reduce(0,+))"
+            result.text="the points are \(group2.reduce(0,combine: +))"
             
         }
     }
@@ -74,14 +74,14 @@ class TwoMultichoiceViewController: UIViewController {
         
         if questionNumber == 0 {
             group2.append(1)
-            result.text="the points are \(group2.reduce(0,+))"
+            result.text="the points are \(group2.reduce(0,combine: +))"
         }else if questionNumber == 1{
             group2.append(1)
-            result.text="the points are \(group2.reduce(0,+))"
+            result.text="the points are \(group2.reduce(0,combine: +))"
             
         }else if questionNumber == 2 {
             group2.append(1)
-            result.text="the points are \(group2.reduce(0,+))"
+            result.text="the points are \(group2.reduce(0,combine: +))"
             
         }
     }
@@ -93,14 +93,14 @@ class TwoMultichoiceViewController: UIViewController {
         
         if questionNumber == 0 {
             group2.append(1)
-            result.text="the points are \(group2.reduce(0,+))"
+            result.text="the points are \(group2.reduce(0,combine: +))"
         }else if questionNumber == 1{
             group2.append(1)
-            result.text="the points are \(group2.reduce(0,+))"
+            result.text="the points are \(group2.reduce(0,combine: +))"
             
         }else if questionNumber == 2 {
             group2.append(1)
-            result.text="the points are \(group2.reduce(0,+))"
+            result.text="the points are \(group2.reduce(0,combine: +))"
             
         }
     }
@@ -112,14 +112,14 @@ class TwoMultichoiceViewController: UIViewController {
         
         if questionNumber == 0 {
             group2.append(1)
-            result.text="the points are \(group2.reduce(0,+))"
+            result.text="the points are \(group2.reduce(0,combine: +))"
         }else if questionNumber == 1{
             group2.append(1)
-            result.text="the points are \(group2.reduce(0,+))"
+            result.text="the points are \(group2.reduce(0,combine: +))"
             
         }else if questionNumber == 2 {
             group2.append(1)
-            result.text="the points are \(group2.reduce(0,+))"
+            result.text="the points are \(group2.reduce(0,combine: +))"
             
         }
     }
@@ -148,21 +148,21 @@ class TwoMultichoiceViewController: UIViewController {
         
         switch questionNumber{
         case 0:
-            QuestionText.text = "first question"
+            QuestionText.text = "What shape is the entrance to the cloisters?"
             answer1.setTitle("first answer", forState: UIControlState.Normal)
             answer2.setTitle("first answer", forState: UIControlState.Normal)
             answer3.setTitle("first answer", forState: UIControlState.Normal)
             answer4.setTitle("first answer", forState: UIControlState.Normal)
             
         case 1:
-            QuestionText.text = "second question"
+            QuestionText.text = "What is the arrangement of shapes in the arch of the cloisters?"
             answer1.setTitle("second answer", forState: UIControlState.Normal)
             answer2.setTitle("second answer", forState: UIControlState.Normal)
             answer3.setTitle("second answer", forState: UIControlState.Normal)
             answer4.setTitle("second answer", forState: UIControlState.Normal)
             
         case 2:
-            QuestionText.text = "third question"
+            QuestionText.text = "What are shapes cut out in the armoured glove?"
             answer1.setTitle("third answer", forState: UIControlState.Normal)
             answer2.setTitle("third answer", forState: UIControlState.Normal)
             answer3.setTitle("third answer", forState: UIControlState.Normal)
@@ -194,21 +194,21 @@ class TwoMultichoiceViewController: UIViewController {
         
         switch questionNumber{
         case 0:
-            QuestionText.text = "forth question"
+            QuestionText.text = "fWhat is the shape on the points of the Cathedral roof during construction?"
             answer1.setTitle("4first answer", forState: UIControlState.Normal)
             answer2.setTitle("4first answer", forState: UIControlState.Normal)
             answer3.setTitle("4first answer", forState: UIControlState.Normal)
             answer4.setTitle("4first answer", forState: UIControlState.Normal)
             
         case 1:
-            QuestionText.text = "5-second question"
+            QuestionText.text = "What is the shape of the font?"
             answer1.setTitle("5-second answer", forState: UIControlState.Normal)
             answer2.setTitle("5-second answer", forState: UIControlState.Normal)
             answer3.setTitle("5-second answer", forState: UIControlState.Normal)
             answer4.setTitle("5-second answer", forState: UIControlState.Normal)
             
         case 2:
-            QuestionText.text = "6-third question"
+            QuestionText.text = "What is the shape of the freemason symbol given to Elias De Derham?"
             answer1.setTitle("6-third answer", forState: UIControlState.Normal)
             answer2.setTitle("6-third answer", forState: UIControlState.Normal)
             answer3.setTitle("6-third answer", forState: UIControlState.Normal)
@@ -240,21 +240,21 @@ class TwoMultichoiceViewController: UIViewController {
         
         switch questionNumber{
         case 0:
-            QuestionText.text = "7-first question"
+            QuestionText.text = "What is the shape of the shield painted on the ceiling?"
             answer1.setTitle("7-first answer", forState: UIControlState.Normal)
             answer2.setTitle("7-first answer", forState: UIControlState.Normal)
             answer3.setTitle("7-first answer", forState: UIControlState.Normal)
             answer4.setTitle("7-first answer", forState: UIControlState.Normal)
             
         case 1:
-            QuestionText.text = "8-second question"
+            QuestionText.text = "What shape is the arrangement of the Prisoners of Conscience Window?"
             answer1.setTitle("8-second answer", forState: UIControlState.Normal)
             answer2.setTitle("8-second answer", forState: UIControlState.Normal)
             answer3.setTitle("8-second answer", forState: UIControlState.Normal)
             answer4.setTitle("8-second answer", forState: UIControlState.Normal)
             
         case 2:
-            QuestionText.text = "9-third question"
+            QuestionText.text = "What shape is the Shrine Tomb of St Osmund?"
             answer1.setTitle("9-third answer", forState: UIControlState.Normal)
             answer2.setTitle("9-third answer", forState: UIControlState.Normal)
             answer3.setTitle("9-third answer", forState: UIControlState.Normal)
@@ -286,21 +286,21 @@ class TwoMultichoiceViewController: UIViewController {
         
         switch questionNumber{
         case 0:
-            QuestionText.text = "10-first question"
+            QuestionText.text = "What is the shape of the Chapter House?"
             answer1.setTitle("10-first answer", forState: UIControlState.Normal)
             answer2.setTitle("10-first answer", forState: UIControlState.Normal)
             answer3.setTitle("10-first answer", forState: UIControlState.Normal)
             answer4.setTitle("10-first answer", forState: UIControlState.Normal)
             
         case 1:
-            QuestionText.text = "11-second question"
+            QuestionText.text = "What is the shape of the fleur-de-lis found on all the cushions?"
             answer1.setTitle("11-second answer", forState: UIControlState.Normal)
             answer2.setTitle("11-second answer", forState: UIControlState.Normal)
             answer3.setTitle("11-second answer", forState: UIControlState.Normal)
             answer4.setTitle("11-second answer", forState: UIControlState.Normal)
             
         case 2:
-            QuestionText.text = "12-third question"
+            QuestionText.text = "What is the shape found on the pillow for Nicholas?"
             answer1.setTitle("12-third answer", forState: UIControlState.Normal)
             answer2.setTitle("12-third answer", forState: UIControlState.Normal)
             answer3.setTitle("12-third answer", forState: UIControlState.Normal)

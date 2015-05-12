@@ -22,8 +22,8 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var G1 = group1.reduce(0,+)
-        var G2 = group2.reduce(0,+)
+        var G1 = group1.reduce(0,combine: +)
+        var G2 = group2.reduce(0,combine: +)
         
         if G1 >= G2 {
             ResultLabel.text = "GROUP 1 IS THE WINNER"

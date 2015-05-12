@@ -69,7 +69,7 @@ class TestViewController: UIViewController {
     func setupZoneFour() {
         Question1.text = "What is the shape of the Chapter House?"
         Question2.text = "What is the shape of the fleur-de-lis found on all the cushions?"
-        Question3.text = "What is the shape found on the pillow for Nicholas"
+        Question3.text = "What is the shape found on the pillow for Nicholas?"
     }
     
     
